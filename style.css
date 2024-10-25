@@ -1,0 +1,108 @@
+/* General Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Chat Container */
+.chat-container {
+    width: 400px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Chat Box Area */
+.chat-box {
+    height: 350px;
+    overflow-y: auto;
+    border: 2px solid #e0e0e0;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background: #f9f9f9;
+}
+
+/* Styling for the User Input Field */
+#user-input {
+    width: calc(100% - 60px);
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    background-color: #f3f7fa;
+    margin-right: 10px;
+}
+
+/* Button Styling */
+button {
+    padding: 12px 18px;
+    background-color: #5C8AFF;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5078d4;
+}
+
+/* Chat Bubble Styling */
+.chat-box div {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+/* User's Message */
+.chat-box div strong {
+    color: #555;
+}
+
+/* Chat Bubble for User */
+.chat-box div:nth-child(odd) {
+    background-color: #d1eaff;
+    align-self: flex-start;
+}
+
+/* Chat Bubble for Bot */
+.chat-box div:nth-child(even) {
+    background-color: #ffebcc;
+    align-self: flex-end;
+}
+
+/* Scrollbar Styling */
+.chat-box::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chat-box::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 10px;
+}
+
+.chat-box::-webkit-scrollbar-thumb:hover {
+    background: #999;
+}
